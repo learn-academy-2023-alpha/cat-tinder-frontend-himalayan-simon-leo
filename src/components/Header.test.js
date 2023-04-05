@@ -15,7 +15,7 @@ describe("<Header />", () =>{
     )
 
 
-    screen.logTestingPlaygroundURL()
+    // screen.logTestingPlaygroundURL()
     const image = screen.getByRole('img', {
       name: /my\-image/i
     })

@@ -12,7 +12,7 @@ describe("<Footer />", () =>{
       </BrowserRouter>
     )
 
-    screen.logTestingPlaygroundURL()
+    // screen.logTestingPlaygroundURL()
     const footer = screen.getByText(
       /© alpha cohort 2023 \| simon curry & leopoldo fabian cuero rodriguez/i)
     expect(footer).toBeInTheDocument()
