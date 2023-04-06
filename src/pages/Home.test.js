@@ -8,6 +8,12 @@ describe("<Home />", () =>{
     it ("checks the images in header", () => {
       render(
         <BrowserRouter>
-          <Header />
+          <Home />
         </BrowserRouter>
-      )
+
+      ) 
+      // screen.logTestingPlaygroundURL()
+      const homeTest = screen.getByText(/this is the home page!/i)
+        expect(homeTest).toBeInTheDocument()
+      }
+    )})
