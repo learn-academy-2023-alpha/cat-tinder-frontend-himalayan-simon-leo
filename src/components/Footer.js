@@ -9,26 +9,12 @@ const Footer = () => {
         <NavItem>
           <NavLink active href="#">
 
-            Our Cats
+            <p>&copy; Alpha Cohort 2023 | Simon Curry & Leopoldo Fabian Cuero Rodriguez</p> 
+          
 
           </NavLink>
         </NavItem>
 
-        <NavItem>
-          <NavLink href="#">
-
-            Create a Cat
-
-          </NavLink>
-        </NavItem>
-
-        <NavItem>
-          <NavLink href="#">
-
-            Are you a Cat?
-
-          </NavLink>
-        </NavItem>
 
       </Nav>
   </>
