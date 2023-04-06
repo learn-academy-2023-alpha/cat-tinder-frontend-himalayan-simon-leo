@@ -6,8 +6,9 @@ const Header = () => {
   return (
     <>
       <Navbar className="my-2" color="dark" dark >
-        <NavbarBrand href="/">
+        <NavbarBrand href="/CatIndex">
           <img alt="my-image" src={cat1} style={{height: 40, width: 40}} />
+          <p>Get Started!</p>
         </NavbarBrand>
       </Navbar>
 

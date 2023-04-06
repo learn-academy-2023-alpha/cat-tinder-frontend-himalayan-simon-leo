@@ -22,19 +22,4 @@ describe("<Header />", () =>{
     expect(image).toHaveAttribute('src', cat1)
     
   })
-  
-  // it ("checks my secondary header images with link", () => {
-  //   render(
-  //     <BrowserRouter>
-  //       <Header />
-  //     </BrowserRouter>
-  //   )
-    
-  //   const image2 =  getByRole('img', { name: /my\-image/i })
-  //   expect(image2).to 
-    
-  // ;
-
-  // })
-
 })

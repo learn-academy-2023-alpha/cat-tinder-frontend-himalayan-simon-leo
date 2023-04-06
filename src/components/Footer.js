@@ -14,22 +14,7 @@ const Footer = () => {
 
           </NavLink>
         </NavItem>
-{/* 
-        <NavItem>
-          <NavLink href="#">
 
-            Create a Cat
-
-          </NavLink>
-        </NavItem>
-
-        <NavItem>
-          <NavLink href="#">
-
-            Are you a Cat?
-
-          </NavLink>
-        </NavItem> */}
 
       </Nav>
   </>
