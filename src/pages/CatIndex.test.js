@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import CatIndex from './CatIndex';
 import { BrowserRouter } from 'react-router-dom';
-import mockCats from './mockCats'
+import cats from '../mockCats'
 
 
 describe("<CatIndex />", () =>{
   it ("renders cat cards", () => {
     render(
       <BrowserRouter>
-        <CatIndex cats={mockCats} />
+        <CatIndex cats={cats} />
       </BrowserRouter>
     )
     cats.forEach(cat => {
