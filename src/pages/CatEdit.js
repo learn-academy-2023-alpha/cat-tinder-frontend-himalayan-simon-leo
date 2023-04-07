@@ -41,7 +41,7 @@ const CatEdit = ({ cats, updateCat }) => {
           <Col sm={10}>
             <Input
               name="name"
-              placeholder="What is your name?"
+              placeholder={currentCat.name}
               type="text"
               onChange={handleChange}
               />
@@ -57,7 +57,7 @@ const CatEdit = ({ cats, updateCat }) => {
           <Col sm={10}>
             <Input
               name="age"
-              placeholder="What is your age?"
+              placeholder={currentCat.age}
               type="number"
               onChange={handleChange}/>
               
@@ -73,7 +73,7 @@ const CatEdit = ({ cats, updateCat }) => {
             <Input
               id="enjoys"
               name="enjoys"
-              placeholder='What do you enjoy?'
+              placeholder={currentCat.enjoys}
               type="textarea"
               onChange={handleChange}
               />
@@ -89,7 +89,7 @@ const CatEdit = ({ cats, updateCat }) => {
           <Col sm={10}>
             <Input
               name="image"
-              placeholder="Image URL"
+              placeholder={currentCat.image}
               type="text"
               onChange={handleChange}/>
           </Col>
