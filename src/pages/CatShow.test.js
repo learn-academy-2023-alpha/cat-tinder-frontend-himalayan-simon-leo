@@ -16,7 +16,7 @@ const rendershow = () => {
 describe("<CatIndex />", () =>{
   it ("renders cat enjoys attibute", () => {
     rendershow()
-    screen.logTestingPlaygroundURL()
+    // screen.logTestingPlaygroundURL()
     const enjoys = screen.getByRole('heading', {
       name: /enjoys: sunshine and warm spots/i
     })

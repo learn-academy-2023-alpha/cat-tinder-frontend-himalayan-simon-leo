@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { useParams } from 'react-router'
 
 const CatIndex = ({cats}) => {
-  const {id}= useParams()
+
   return (
     <>
       <h1>CatIndex</h1>
@@ -12,31 +12,25 @@ const CatIndex = ({cats}) => {
       {cats.map((cat, index) =>{
         return (
           <>
-            <Card
-              key={index}
-              style={{
-              width: '18rem'
-              }}
-              >
-                <img
-                  alt={cat.name}
-                  src={cat.image}
-                  />
+            <Card key={index} style={{width: '18rem'}} >
+                <img alt={cat.name} src={cat.image}/>
+
                   <CardBody>
+
                     <CardTitle tag="h5">
                       {cat.name}
                     </CardTitle>
-                    <CardSubtitle
-                      className="mb-2 text-muted"
-                      tag="h6"
-                    >
+
+                    <CardSubtitle className="mb-2 text-muted" tag="h6">
                       {cat.age}
                     </CardSubtitle>
+
                     <Button>
-                    <NavLink to={`/catshow/${cat.id}`}>More About Me</NavLink>
+                      <NavLink to={`/catshow/${cat.id}`}>More About Me</NavLink>
                     </Button>
+
                   </CardBody>
-                </Card>
+            </Card>
                 
           </>
         )

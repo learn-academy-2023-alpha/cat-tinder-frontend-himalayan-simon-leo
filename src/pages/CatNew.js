@@ -17,9 +17,9 @@ const CatNew = ({createCat}) => {
     setNewCat({...newCat, [e.target.name]: e.target.value})
   }
 
-const handleSubmit = () => {
-  createCat(newCat)
-  navigate("/CatIndex")
+  const handleSubmit = () => {
+    createCat(newCat)
+    navigate("/CatIndex")
 }
 
   return (
@@ -27,9 +27,7 @@ const handleSubmit = () => {
       <Form>
         <FormGroup row>
 
-          <Label
-            for="name"
-            sm={2}>
+          <Label for="name" sm={2}>
             Cat Name
           </Label>
 
@@ -39,15 +37,13 @@ const handleSubmit = () => {
               placeholder="What is your name?"
               type="text"
               onChange={handleChange}
-            />
+              />
           </Col>
+          
         </FormGroup>
 
         <FormGroup row>
-
-          <Label
-            for="age"
-            sm={2}>
+          <Label for="age" sm={2}>
             Cat Age
           </Label>
 
@@ -56,13 +52,14 @@ const handleSubmit = () => {
               name="Age"
               placeholder="What is your age?"
               type="number"
-            />
+              onChange={handleChange}/>
+              
+
           </Col>
         </FormGroup>
+
         <FormGroup row>
-          <Label
-            for="exampleSelect"
-            sm={2} >
+          <Label for="Enjoys" sm={2} >
             Cat Enjoys
           </Label>
           <Col sm={10}>
@@ -71,14 +68,14 @@ const handleSubmit = () => {
               name="enjoys"
               placeholder='What do you enjoy?'
               type="textarea"
-            />
+              onChange={handleChange}
+              />
+              
           </Col>
         </FormGroup>
         
         <FormGroup row>
-          <Label
-            for="name"
-            sm={2}>
+          <Label for="name" sm={2}>
             Cat Photo
           </Label>
 
@@ -87,19 +84,12 @@ const handleSubmit = () => {
               name="image"
               placeholder="Image URL"
               type="text"
-              onChange={handleChange}
-            />
+              onChange={handleChange}/>
           </Col>
         </FormGroup>
 
-        <FormGroup
-          check
-          row>
-          <Col
-            sm={{
-              offset: 2,
-              size: 10
-            }}>
+        <FormGroup check row>
+          <Col sm={{ offset: 2, size: 10}}>
 
             <Button onClick={handleSubmit} name="submit">
               Submit

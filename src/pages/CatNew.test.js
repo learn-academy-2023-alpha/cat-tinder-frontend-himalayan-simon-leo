@@ -10,7 +10,7 @@ describe("<CatNew />", () => {
             <CatNew />
         </BrowserRouter>
         )
-      screen.logTestingPlaygroundURL()
+      // screen.logTestingPlaygroundURL()
       const inputTitle = screen.getByText(/cat name/i)
       expect(inputTitle).toBeInTheDocument()
     })
