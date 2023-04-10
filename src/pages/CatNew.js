@@ -3,8 +3,6 @@ import {Form, Col, FormGroup, Label, Button, FormText, Input} from 'reactstrap'
 import {useNavigate} from 'react-router-dom'
 
 
-
-
 const CatNew = ({createCat}) => {
   const navigate = useNavigate()
 
@@ -51,7 +49,7 @@ const CatNew = ({createCat}) => {
 
           <Col sm={10}>
             <Input
-              name="Age"
+              name="age"
               placeholder="What is your age?"
               type="number"
               onChange={handleChange}/>
@@ -61,7 +59,7 @@ const CatNew = ({createCat}) => {
         </FormGroup>
 
         <FormGroup row>
-          <Label for="Enjoys" sm={2} >
+          <Label for="enjoys" sm={2} >
             Cat Enjoys
           </Label>
           <Col sm={10}>
