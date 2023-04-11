@@ -4,20 +4,22 @@ import { Nav, NavItem, NavLink } from 'reactstrap'
 const Footer = () => {
   return (
     <>
-      <Nav pills>
+      <div className='footer-board'>
+        <Nav pills>
 
-        <NavItem>
-          <NavLink active href="#">
+          <NavItem>
+            <NavLink href="#">
 
-            <p>&copy; Alpha Cohort 2023 | Simon Curry & Leopoldo Fabian Cuero Rodriguez</p> 
-          
+              <p>&copy; Alpha Cohort 2023 | Simon Curry & Leopoldo Fabian Cuero Rodriguez</p> 
+            
 
-          </NavLink>
-        </NavItem>
+            </NavLink>
+          </NavItem>
 
 
-      </Nav>
-  </>
+        </Nav>
+      </div>
+    </>
   )
 }
 

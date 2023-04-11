@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background: #aeccc6;
+
+  /* font-family: "Raleway", sans-serif;
+  padding: 64px; */
 }
 
 .App-logo {
@@ -39,4 +43,19 @@
 
 .card-flex{
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  border-radius: 10px, 5px, 10px, 5px;
+}
+.main-board {
+  font-family: 'Indie Flower', cursive;
+  padding: 12px;
+  background: #aeccc6;
+
+}
+
+.footer-board {
+  align-items: center;
+
 }
